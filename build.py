@@ -8,7 +8,8 @@ def get_files_to_zip():
 		r'\.(py|sh|pem)$', #file endings
 		r'(\\|/)\.', #hidden files
 		r'package\.json|icon\.html', #file names
-		r'(\\|/)(promo|unittest|build)(\\|/)' #folders
+		r'(\\|/)(promo|unittest|build|node_modules)(\\|/)', #folders
+		'firefox-sign.js'
 	]
 
 	zippable_files = []

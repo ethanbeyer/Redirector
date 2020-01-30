@@ -2,7 +2,10 @@
 *.DS_Store
 *.zip
 build/*
+sign/*
+firefox-sign.js
 ffox.sh
 devprofile/*
 debug.sh
 *.pem
+node_modules
