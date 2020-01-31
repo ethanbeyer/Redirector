@@ -1,6 +1,6 @@
 {
   "name": "firefoxredirectoraddon",
-  "version": "3.6.0",
+  "version": "3.6.4",
   "description": "Redirection Addon for Firefox",
   "main": "firefox-sign.js",
   "dependencies": {
