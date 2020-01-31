@@ -167,6 +167,24 @@ function pageLoad() {
 					]
 				}
 			));
+			REDIRECTS.push(new Redirect(
+				{
+					"description": "Open Spotify Directly",
+					"exampleUrl": "https://open.spotify.com/track/1da1f9RuqlTD1OS1oiCgu0",
+					"exampleResult": "spotify://track/1da1f9RuqlTD1OS1oiCgu0",
+					"error": null,
+					"includePattern": "https://open.spotify.com/*",
+					"excludePattern": "",
+					"patternDesc": "Anything after the base will be piped straight to Spotify to open in their app.",
+					"redirectUrl": "spotify://$1",
+					"patternType": "W",
+					"processMatches": "noProcessing",
+					"disabled": false,
+					"appliesTo": [
+						"main_frame"
+					]
+				}
+			));
 		}
 		renderRedirects();
 	}); 
